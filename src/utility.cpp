@@ -714,7 +714,7 @@ VOID Print (LPWSTR messagew)
                 fputws(messagew, stdout);
         }
         else {
-            const size_t MAXMESSAGELENGTH = 5119;
+            const size_t MAXMESSAGELENGTH = 15119;
             size_t  count = 0;
             CHAR    messagea [MAXMESSAGELENGTH + 1];
             if (wcstombs_s(&count, messagea, MAXMESSAGELENGTH + 1, messagew, _TRUNCATE) != 0) {
